@@ -18,16 +18,16 @@ public class JavaHardArrayListDriver {
 
 		JavaHardArrayList<Integer> bins = new JavaHardArrayList<>();
 
-		bins.add(new Integer(1));
-		bins.add(new Integer(3));
-		bins.add(new Integer(3));
-		bins.add(new Integer(1));
+		bins.add(Integer.valueOf(1));
+		bins.add(Integer.valueOf(3));
+		bins.add(Integer.valueOf(3));
+		bins.add(Integer.valueOf(1));
 
-		bins.add(1);
+		bins.add(2, 2);
 		bins.add(4);
 		bins.add(6);
 		bins.add(4);
-		bins.add(1);
+		bins.add(8, 1);
 
 		System.out.println( bins );
 

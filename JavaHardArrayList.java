@@ -22,13 +22,17 @@ public class JavaHardArrayList<E> {
 	}
 
 	public void add(int index, E obj) {
-		if ( used == arr.length )
-			grow();
-		// move the other values over to make space
-		for ( int i=used; i>index; i-- )
-			arr[i] = arr[i-1];
-		arr[index] = obj;
-		used++;
+		if ( index <= used ) {
+			if ( used == arr.length )
+				grow();
+			// move the other values over to make space
+			for ( int i=used; i>index; i-- )
+				arr[i] = arr[i-1];
+			arr[index] = obj;
+			used++;
+		} else {
+			throw new IndexOutOfBoundsException("Please pick an available index");
+		}
 	}
 
 	public E get(int index) {

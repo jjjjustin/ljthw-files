@@ -23,8 +23,8 @@ public class ThingySorterDriver {
 		System.out.println( "Sorted? " + sort2.isSorted() );
 
 		Random gen = new Random();
-		Integer[] inums2 = new Integer[50000];
-		Integer[] inums2copy = new Integer[50000];
+		Integer[] inums2 = new Integer[5];
+		Integer[] inums2copy = new Integer[5];
 		for ( int i=0; i<inums2.length; i++ ) {
 			inums2[i] = gen.nextInt(1000);
 			inums2copy[i] = inums2[i];

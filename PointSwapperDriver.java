@@ -16,8 +16,8 @@ public class PointSwapperDriver {
 		pd.swap();
 		System.out.println( "after after: " + pd );
 
-		PointSwapper<Integer> pg1 = new PointSwapper<>(2, 6);
-		PointSwapper<Double>  pg2 = new PointSwapper<>(1.3, 5.7);
+		PointSwapper<String> pg1 = new PointSwapper<>("one", "two");
+		PointSwapper<Boolean>  pg2 = new PointSwapper<>(true, false);
 
 		System.out.println( "\nbefore: " + pg1 );
 		pg1.swap();
